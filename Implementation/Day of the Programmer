@@ -1,0 +1,42 @@
+def programmerDay(y):
+
+    if y > 1918:
+        print("Gregorian Calender")
+        if (y % 400 == 0) or (y % 4 == 0) and (y % 100 != 0):
+            print("leap year")
+            dd = str(256 - 244)
+            mm = '09'
+            print(dd + "." + mm + "." + str(y))
+        else:
+            print("Non Leap year")
+            dd = str(256-243)
+            mm = '09'
+            print(dd + "." + mm + "." + str(y))
+
+    elif y < 1918:
+        print("Julian Calender")
+        if y % 4 == 0:
+            print("Leap year")
+            dd = str(256 - 244)
+            mm = '09'
+            print(dd + "." + mm + "." + str(y))
+        else:
+            print("Non Leap year")
+            dd = str(256-243)
+            mm = '09'
+            print(dd + "." + mm + "." + str(y))
+    else:
+        print("Non leap year")
+        dd = str(256 - 230)
+        mm = '09'
+        print(dd + "." + mm + "." + str(y))
+
+def main():
+    year = int(input("Enter year: "))
+    print(type(year))
+    programmerDay(year)
+
+if __name__ == "__main__":
+    main()
+
+
