@@ -20,10 +20,10 @@ def sockMerchant(n, ar):
 
 def main():
     n = int(input("Enter num of socks: "))
-    ar = list(map(int, input("Enter array of color socks: ").split()[:n]))
+    arr = list(map(int, input("Enter array of color socks: ").split()[:n]))
     print(n, ar)
 
-    sockMerchant(n, ar)
+    sockMerchant(n, arr)
 
 if __name__ == "__main__":
     main()
