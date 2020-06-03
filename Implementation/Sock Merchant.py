@@ -7,23 +7,23 @@
 # to be found. start/end(optional)-> starting and ending index of string from where search starts and ends.
 
 
-def sockMerchant(n,ar):
+def sockMerchant(n, ar):
     print(set(ar))
 
     ar2 = [ar.count(i) for i in set(ar)]
     print(ar2)
-    sum = 0
+    total = 0
     for i in ar2:
-        sum += int(i/2)
+        total += int(i/2)
 
-    print(sum)
+    print(total)
 
 def main():
     n = int(input("Enter num of socks: "))
     ar = list(map(int, input("Enter array of color socks: ").split()[:n]))
     print(n, ar)
 
-    sockMerchant(n,ar)
+    sockMerchant(n, ar)
 
 if __name__ == "__main__":
     main()
